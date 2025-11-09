@@ -234,14 +234,12 @@
             const totalWithInterest = monthlyPayment * months;
             const totalInterest = totalWithInterest - principal;
 
-            const formatter = new Intl.NumberFormat('ar-SA', {
+
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2
             });
 
-            monthlyPaymentEl.textContent = `القسط الشهري: ${formatter.format(monthlyPayment)}`;
-            totalWithInterestEl.textContent = `إجمالي المبلغ مع الفائدة: ${formatter.format(totalWithInterest)}`;
-            totalInterestEl.textContent = `إجمالي الفائدة المدفوعة: ${formatter.format(totalInterest)}`;
+
 
             errorMessageEl.textContent = '';
             resultsCard.style.display = 'flex';
